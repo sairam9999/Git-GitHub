@@ -46,3 +46,68 @@ Git works on 3-tier architecture principle where we have different stages like L
 	Once the changes are verified in production, it’s time to push those changes to your master. Once you are done with pushing the changes, Pull Requests preserve a record of the archived changes of our code. These changes will help others in the team how the decision was made before making the changes. 
 	Even we can close the Test Track items (bugs) from the previous versions of software release by merging the Pull Requests. For example: Closed Test Track Item #55. 
 
+# Most Useful Commands in Git:
+
+-------------------------------------------------------------------------------------------------------------------------------------
+|                 Command                     ||                          Description of the Command                            |
+-------------------------------------------------------------------------------------------------------------------------------------
+| 	git init				  ||Initializes git at the present directory.
+-------------------------------------------------------------------------------------------------------------------------------------
+| where git	|| Used to find the actual location where the git is installed. 
+-------------------------------------------------------------------------------------------------------------------------------------
+| ls-la	|| Shows all the hidden directories.
+-------------------------------------------------------------------------------------------------------------------------------------
+| Ls	Shows all the files.
+-------------------------------------------------------------------------------------------------------------------------------------
+| git help	
+-------------------------------------------------------------------------------------------------------------------------------------
+| git add .	|| Used to add all the files from a project.
+-------------------------------------------------------------------------------------------------------------------------------------
+| git add <file name> 	|| Used to add selected file from a project.
+-------------------------------------------------------------------------------------------------------------------------------------
+| git add <file name> <file name>	|| Used to add multiple selected files from a project.
+--------------------------------------------------------------------------------------------------------------------------------------
+| git commit –m <”Commit Message”>
+-------------------------------------------------------------------------------------------------------------------------------------
+| git log	|| Gives the complete logs of the repository.
+-------------------------------------------------------------------------------------------------------------------------------------
+| git log –n <just pass the number>
+| For example 5	By passing 5, we can see logs of last 5 commits.
+------------------------------------------------------------------------------------------------------------------------------------- 
+| git log –author = <”Author name”> ||	Open the commits which are done by this selected author
+-------------------------------------------------------------------------------------------------------------------------------------
+| git log –since = <Date>
+| For Example: I’m considering 2018-01-01/ 1 week ago	By passing this date, it gives the log messages which are done after 2018-01-01.
+-------------------------------------------------------------------------------------------------------------------------------------
+| git log –until = <Date> ||
+| For Example: I’m considering 2018-01-07/ 1 week ago	By passing this date, it gives the log messages which are done until 2018-01-01.
+--------------------------------------------------------------------------------------------------------------------------------------
+| git log –format = oneline	Need to specify the log format whether we want in oneline/ short/ fuller/ email.
+|           Email gives you the date, subject and even we can email also.
+-------------------------------------------------------------------------------------------------------------------------------------
+| git log –oneline	|| Gives all the log details with messages.
+-------------------------------------------------------------------------------------------------------------------------------------
+| git log –no-merges	|| Shows the whole commits, but skip any merges.
+-------------------------------------------------------------------------------------------------------------------------------------
+| git log –oneline -<pass the number>
+| For example: pass the number as 3	Gives the last three commit messages.
+-------------------------------------------------------------------------------------------------------------------------------------
+| git log –grep = <”pass the keyword”>
+| For example: “reset”	Gives the log messages which matches the keyword “reset”.
+| Used to pull the logs with the commit messages.
+-------------------------------------------------------------------------------------------------------------------------------------
+| Git log <SHA value 1> . . <SHA value 2>
+| SHA value 1 should be the recent value.
+| SHA value 2 should be the older value	This gives the logs info in between two SHA values.
+-------------------------------------------------------------------------------------------------------------------------------------
+| git diff	|| Gives the track of everything which is added/ deleted.
+| Can track only “local files” and doesn’t show the difference which is in the “staging area”.
+-------------------------------------------------------------------------------------------------------------------------------------
+| git diff –staged ||	
+-------------------------------------------------------------------------------------------------------------------------------------
+| git status	|| 
+-------------------------------------------------------------------------------------------------------------------------------------
+| git rm <file name>	|| 
+-------------------------------------------------------------------------------------------------------------------------------------
+| git checkout --<file name> 	|| 
+-------------------------------------------------------------------------------------------------------------------------------------
